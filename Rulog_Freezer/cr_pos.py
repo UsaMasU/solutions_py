@@ -2,6 +2,7 @@ import time
 
 crane = "CR2"
 
+# Crane Position #######################################################################################################
 with open(f"{crane}_IniPosTraslo1.ini") as f_data:
     content = list(filter(None, f_data.read().split('\n')))
 

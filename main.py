@@ -2,6 +2,11 @@ import sys
 from modules.ntp.get_ntp import get_ntp_time
 
 _str_1 = "Hello World!"
+_settings = {
+    'one': '1',
+    'two': '2',
+    'three':'3'
+}
 
 # MAIN #################################################################################################################
 if __name__ == '__main__':

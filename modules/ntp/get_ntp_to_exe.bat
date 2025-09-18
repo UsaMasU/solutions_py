@@ -1,0 +1,1 @@
+py -m PyInstaller --onefile get_ntp.py

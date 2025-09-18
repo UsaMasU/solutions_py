@@ -17,10 +17,17 @@ if __name__ == '__main__':
             print(item.capitalize())
         
         print()
+        
+        for key, val in _settings.items():
+            print(f"{key}:{val}")
+
+        print()
         if len(sys.argv) < 2:
             time = get_ntp_time()
         else:
             time = get_ntp_time(sys.argv[1])
+
+
 
 
     except Exception as e:

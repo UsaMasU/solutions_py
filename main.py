@@ -1,3 +1,5 @@
+import sys
+from modules.ntp.get_ntp import get_ntp_time
 
 _str_1 = "Hello World!"
 
@@ -5,10 +7,16 @@ _str_1 = "Hello World!"
 if __name__ == '__main__':
     try:
 
-        print(_str_1)
-        
+        print(f"{_str_1}\n") 
         for item in _str_1:
             print(item.capitalize())
+        
+        print()
+        if len(sys.argv) < 2:
+            time = get_ntp_time()
+        else:
+            time = get_ntp_time(sys.argv[1])
+
 
     except Exception as e:
         print(f"Error: {e}.")

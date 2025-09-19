@@ -1,0 +1,13 @@
+# folders
+/.vscode/
+__pycache__/
+venv/
+.venv/
+/_archives/
+/logs/
+/pcapng/
+
+# files
+*.py[codz]
+*$py.class
+.env

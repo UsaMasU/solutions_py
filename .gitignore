@@ -1,0 +1,9 @@
+# folders
+/.vscode/
+__pycache__/
+venv/
+.venv/
+
+# files
+*.py[cod]
+.env

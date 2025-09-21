@@ -39,7 +39,7 @@ The project can be configured by modifying the `config.py` file. The following s
 
 ## File Structure
 
-## 📁 Структура проекта
+## Структура проекта
 
 ```
 project-name/                   # project name

@@ -79,7 +79,7 @@ project-name/                   # project name
 ```
 
 ## Repositories structure
-
+```
 project-name/                   # project name
 ├── src/
 │   └── package_name/
@@ -94,3 +94,4 @@ project-name/                   # project name
 │           ├── helpers.py      # functions for help
 │           └── validators.py
 ├── tests/
+```

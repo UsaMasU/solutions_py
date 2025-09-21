@@ -11,6 +11,7 @@ A brief description of what your project does.
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [File Structure](#file-structure)
+- [Repositories structure](#repositories-structure)
 - [Examples](#examples)
 - [Contributing](#contributing)
 - [License](#license)
@@ -76,3 +77,20 @@ project-name/                   # project name
 ├── LICENSE
 └── README.md
 ```
+
+## Repositories structure
+
+project-name/                   # project name
+├── src/
+│   └── package_name/
+│       ├── __init__.py
+│       ├── main.py
+│       ├── models.py
+│       ├── api/
+│       │   ├── __init__.py
+│       │   └── client.py
+│       └── utils/
+│           ├── __init__.py 
+│           ├── helpers.py      # functions for help
+│           └── validators.py
+├── tests/

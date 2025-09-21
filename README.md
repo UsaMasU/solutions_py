@@ -41,7 +41,7 @@ The project can be configured by modifying the `config.py` file. The following s
 
 The project follows the following structure:
 weather-cli/
-├── weathercli/                 # Основной пакет
+├── weathercli/                # Основной пакет
 │   ├── __init__.py            # Инициализация пакета
 │   ├── cli.py                 # CLI команды и интерфейс
 │   ├── api_client.py          # Клиент для работы с OpenWeatherMap API
@@ -59,8 +59,8 @@ weather-cli/
 │   └── API.md                 # Описание API
 ├── requirements.txt           # Зависимости проекта
 ├── requirements-dev.txt       # Зависимости для разработки
-├── setup.py                   # Конфигурация пакета
-├── pyproject.toml             # Modern Python configuration
-├── .gitignore                 # Git ignore rules
-├── LICENSE                    # Лицензия MIT
+├── setup.py                   # Конфигурация пакета 
+├── pyproject.toml             # Modern Python configuration 
+├── .gitignore                 # Git ignore rules 
+├── LICENSE                    # Лицензия MIT 
 └── README.md                  # Этот файл

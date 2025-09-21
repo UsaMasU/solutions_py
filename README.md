@@ -39,28 +39,40 @@ The project can be configured by modifying the `config.py` file. The following s
 
 ## File Structure
 
-The project follows the following structure:
-weather-cli/
-├── weathercli/                # Основной пакет
-│   ├── __init__.py            # Инициализация пакета
-│   ├── cli.py                 # CLI команды и интерфейс
-│   ├── api_client.py          # Клиент для работы с OpenWeatherMap API
-│   ├── models.py              # Pydantic модели данных
-│   ├── config.py              # Управление конфигурацией
-│   ├── cache.py               # Система кэширования
-│   ├── formatters.py          # Форматирование вывода
-│   └── exceptions.py          # Пользовательские исключения
-├── tests/                     # Тесты
-│   ├── test_api_client.py     # Тесты API клиента
-│   ├── test_cli.py            # Тесты CLI команд
-│   ├── test_models.py         # Тесты моделей данных
-│   └── conftest.py            # Фикстуры pytest
-├── docs/                      # Документация
-│   └── API.md                 # Описание API
-├── requirements.txt           # Зависимости проекта
-├── requirements-dev.txt       # Зависимости для разработки
-├── setup.py                   # Конфигурация пакета 
-├── pyproject.toml             # Modern Python configuration 
-├── .gitignore                 # Git ignore rules 
-├── LICENSE                    # Лицензия MIT 
-└── README.md                  # Этот файл
+## 📁 Структура проекта
+
+```
+project-name/
+├── src/
+│   └── package_name/
+│       ├── __init__.py
+│       ├── main.py
+│       ├── models.py
+│       ├── api/
+│       │   ├── __init__.py
+│       │   └── client.py
+│       └── utils/
+│           ├── __init__.py
+│           ├── helpers.py
+│           └── validators.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_main.py
+│   ├── test_models.py
+│   └── test_utils/
+│       └── test_helpers.py
+├── docs/
+│   ├── api.md
+│   ├── installation.md
+│   └── usage.md
+├── examples/
+│   ├── basic_usage.py
+│   └── advanced_usage.py
+├── requirements.txt
+├── requirements-dev.txt
+├── setup.py
+├── pyproject.toml
+├── .gitignore
+├── LICENSE
+└── README.md
+```

@@ -42,7 +42,7 @@ The project can be configured by modifying the `config.py` file. The following s
 ## 📁 Структура проекта
 
 ```
-project-name/
+project-name/                   # project name
 ├── src/
 │   └── package_name/
 │       ├── __init__.py
@@ -52,8 +52,8 @@ project-name/
 │       │   ├── __init__.py
 │       │   └── client.py
 │       └── utils/
-│           ├── __init__.py
-│           ├── helpers.py
+│           ├── __init__.py 
+│           ├── helpers.py      # functions for help
 │           └── validators.py
 ├── tests/
 │   ├── __init__.py

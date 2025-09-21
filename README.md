@@ -80,18 +80,32 @@ project-name/                   # project name
 
 ## Repositories structure
 ```
-project-name/                   # project name
-├── src/
-│   └── package_name/
-│       ├── __init__.py
-│       ├── main.py
-│       ├── models.py
-│       ├── api/
-│       │   ├── __init__.py
-│       │   └── client.py
-│       └── utils/
-│           ├── __init__.py 
-│           ├── helpers.py      # functions for help
-│           └── validators.py
-├── tests/
+main
+│
+├── develop
+│   │
+│   ├── feature/feat-123-add-user-profile
+│   │   │
+│   │   ├── feat/feat-123-user-model
+│   │   └── feat/feat-123-profile-ui
+│   │
+│   ├── feature/feat-124-payment-integration  
+│   │   │
+│   │   ├── feat/feat-124-payment-api
+│   │   └── feat/feat-124-ui-components
+│   │
+│   ├── bugfix/bug-455-login-error
+│   │
+│   └── chore/update-dependencies
+│
+├── release/v1.4.0
+│   │
+│   ├── release/v1.4.0-rc1
+│   └── release/v1.4.0-final
+│
+├── hotfix/hotfix-789-security-issue
+│
+└── support/v1.x           - Поддержка старой версии
+    │
+    └── hotfix/hotfix-790-v1-patch
 ```

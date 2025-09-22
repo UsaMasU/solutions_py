@@ -1,5 +1,5 @@
 # Project Title
-Скрипт осуществляющзий парсинг комуникационных телеграмм, полученных с помощью захвата сетевого трафика ПО wireshark.
+leadparser - скрипт осуществляющзий парсинг комуникационных телеграмм, полученных с помощью захвата сетевого трафика ПО wireshark.
 
 ## Table of Contents
 
@@ -15,28 +15,26 @@
 1. Установить Python: https://www.python.org/
 2. Установить VSCode: https://code.visualstudio.com/
 3. Установить Wireshark: https://www.wireshark.org/
-8. Установить Npcap драйвер для работы с wireshark: https://npcap.com/#download
-6. Запустить VSCode и установить расширения:
+4. Установить Npcap драйвер для работы с wireshark: https://npcap.com/#download
+5. Запустить VSCode и установить расширения:
 ```
     Python
     Python Debugger
     Python Environments
     GitLens
 ```
-4. Клонировать репозиторий:`git clone https://github.com/username/repo.git`
+6. Клонировать репозиторий:`git clone https://github.com/username/repo.git`
 7. Из VSCode открыть папку репозитория в терминале и установить python пакеты:
 ```
 pip install -r requirements.txt
 ```
-9.  Проверить работу leadparser: запустить скрипт [Usage](#usage)
-10. Другие захваты трафика здесь: https://disk.yandex.ru/d/bfqx7Makctg1pw
-
+8.  Проверить работу leadparser: запустить скрипт [Usage](#usage)
+9. Другие захваты трафика здесь: https://disk.yandex.ru/d/bfqx7Makctg1pw
 
 ## Usage
 
-2. Запуск с gui: `python leadparser.py`
-1. Запуск скрипта из терминала: `python leadparser.py -c`
-
+- Запуск скрипта с интерфейсом gui: `python leadparser.py`
+- Запуск скрипта из терминала: `python leadparser.py -c`
 
 ## Configuration
 
@@ -95,8 +93,9 @@ sscc = *
 ropa = *
 ```
 
-В том случае, если запуск осуществляется в консольном режиме, в файл настроек потребуется вносить имена папок и файлов.
-При работе с gui доступны поля ввода имен папок и файлов.
+В том случае, если запуск осуществляется в консольном режиме, в файл настроек потребуется вносить имена папок (pcap_folder) и файлов (pcap_file), 
+содержимое которых скрипт будет обрабатываеть при работе.
+При работе скрипта в режиме gui, в интерфейсе доступны поля для ввода соответствующих имен папок и файлов.
 
 ## Project Structure
 

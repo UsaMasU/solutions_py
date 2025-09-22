@@ -1,9 +1,5 @@
 # Project Title
-
-[![Build Status](https://img.exmaple.io/exmaple/username/repo.svg)](https://exmaple.org/username/repo)
-[![License](https://img.exmaple.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
-A brief description of what your project does.
+Скрипт осуществляющзий парсинг комуникационных телеграмм, полученных с помощью захвата сетевого трафика ПО wireshark.
 
 ## Table of Contents
 
@@ -25,10 +21,12 @@ A brief description of what your project does.
 3. Установить Wireshark: https://www.wireshark.org/
 8. Установить Npcap драйвер для работы с wireshark: https://npcap.com/#download
 6. Запустить VSCode и установить расширения:
+```
     Python
     Python Debugger
     Python Environments
     GitLens
+```
 4. Клонировать репозиторий:`git clone https://github.com/username/repo.git`
 7. Из VSCode открыть папку репозитория в терминале и установить python пакеты:
 ```
@@ -104,9 +102,7 @@ ropa = *
 В том слуяае, если запуске осуществляетс к консольном режиме, в файл настроек потрубуется вносить имена папок и файлов.
 При работе с gui доступны поля ввода имен папок и файлов.
 
-## File Structure
-
-## Структура проекта
+## Project Structure
 
 ```
 leadparser-sca-evocom/          
@@ -141,8 +137,6 @@ leadparser-sca-evocom/
 ├── requirements.txt
 └── warehouse_config.json       # конфгурация обьекта склада. IP-адреса, название сетевых устройств.
 ```
-
-
 
 ## Repositories structure
 ```

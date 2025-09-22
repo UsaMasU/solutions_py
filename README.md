@@ -15,7 +15,7 @@ leadparser - скрипт осуществляющзий парсинг кому
 1. Установить Python: https://www.python.org/
 2. Установить VSCode: https://code.visualstudio.com/
 3. Установить Wireshark: https://www.wireshark.org/
-4. Установить Npcap драйвер для работы с wireshark: https://npcap.com/#download
+4. Установить Npcap драйвер: https://npcap.com/#download
 5. Запустить VSCode и установить расширения:
 ```
     Python

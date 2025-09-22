@@ -189,4 +189,4 @@ docs/ (documentation): для документации
 
 ## Contact Information
 
-- [@UsaMasU](https://www.github.com/usamasu)
+- [@Vladimir Semenov](http://git.logx.local/u/vsemenov)

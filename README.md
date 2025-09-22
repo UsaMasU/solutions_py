@@ -22,19 +22,20 @@ leadparser - скрипт осуществляющзий парсинг кому
     Python Debugger
     Python Environments
     GitLens
-```
-6. Клонировать репозиторий:`git clone https://github.com/username/repo.git`
+``` 
+6. Клонировать репозиторий:`git clone http://git.logx.local/leadparser/leadparser-sca-sovetsk.git`
 7. Из VSCode открыть папку репозитория в терминале и установить python пакеты:
 ```
 pip install -r requirements.txt
 ```
-8.  Проверить работу leadparser: запустить скрипт [Usage](#usage)
+8.  Проверить работу leadparser: [запустить скрипт](#usage)
 9. Другие захваты трафика здесь: https://disk.yandex.ru/d/bfqx7Makctg1pw
 
 ## Usage
 
 - Запуск скрипта с интерфейсом gui: `python leadparser.py`
 - Запуск скрипта из терминала: `python leadparser.py -c`
+- Запуск из VSCode: `Ctrl + F5`
 
 ## Configuration
 

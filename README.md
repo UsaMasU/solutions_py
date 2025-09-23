@@ -11,32 +11,6 @@ leadparser - скрипт осуществляющзий парсинг кому
 - [Acknowledgments](#acknowledgments)
 - [Contact Information](#contact-information)
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
 ## Installation
 
 1. Установить Python: https://www.python.org/
@@ -61,8 +35,8 @@ pip install -r requirements.txt
 
 ## Usage
 
-- Запуск скрипта с интерфейсом gui: `python leadparser.py`
-- Запуск скрипта из терминала: `python leadparser.py -c`
+- Запуск скрипта в окне: `python leadparser.py`
+- Запуск скрипта в консоли: `python leadparser.py -c`
 - Запуск из VSCode: `Ctrl + F5`
 
 ## Configuration
@@ -217,17 +191,10 @@ docs/ (documentation): для документации
 
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
+Полезные ресурсы:
+* [Wireshark guide](https://habr.com/ru/articles/735866/)
+* [VSCode guide](https://habr.com/ru/articles/490754/)
+* [Python docs](https://pylessons.readthedocs.io/ru/latest/contents.html)
 
 ## Contact Information
 

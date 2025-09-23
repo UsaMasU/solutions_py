@@ -8,7 +8,34 @@ leadparser - скрипт осуществляющзий парсинг кому
 - [Configuration](#configuration)
 - [File Structure](#project-structure)
 - [Repositories structure](#repositories-structure)
+- [Acknowledgments](#acknowledgments)
 - [Contact Information](#contact-information)
+
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
 
 ## Installation
 
@@ -18,10 +45,10 @@ leadparser - скрипт осуществляющзий парсинг кому
 4. Установить Npcap драйвер: https://npcap.com/#download
 5. Запустить VSCode и установить расширения:
 ```
-    Python: https://marketplace.visualstudio.com/items?itemName=ms-python.python
-    Python Debugger: https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy
-    Python Environments: https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-python-envs
-    GitLab Workflow: https://marketplace.visualstudio.com/items?itemName=GitLab.gitlab-workflow
+    Python
+    Python Debugger
+    Python Environments
+    GitLab Workflow
     GitLens
 ``` 
 6. Клонировать репозиторий:`git clone http://git.logx.local/leadparser/leadparser-sca-sovetsk.git`
@@ -187,6 +214,20 @@ fix/ (fix, hotfix, bugfix): для исправления ошибок
 test/ (testing): для тестирования 
 docs/ (documentation): для документации
 ```
+
+## Acknowledgments
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
+
 
 ## Contact Information
 

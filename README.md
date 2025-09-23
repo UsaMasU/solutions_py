@@ -18,9 +18,10 @@ leadparser - скрипт осуществляющзий парсинг кому
 4. Установить Npcap драйвер: https://npcap.com/#download
 5. Запустить VSCode и установить расширения:
 ```
-    Python
-    Python Debugger
-    Python Environments
+    Python: https://marketplace.visualstudio.com/items?itemName=ms-python.python
+    Python Debugger: https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy
+    Python Environments: https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-python-envs
+    GitLab Workflow: https://marketplace.visualstudio.com/items?itemName=GitLab.gitlab-workflow
     GitLens
 ``` 
 6. Клонировать репозиторий:`git clone http://git.logx.local/leadparser/leadparser-sca-sovetsk.git`

@@ -1,4 +1,4 @@
-###### Version 1.4.24
+###### Version 3.2.7
 ## Lead-Parser
 Скрипт осуществляющий парсинг комуникационных телеграмм, полученных с помощью захвата сетевого трафика ПО wireshark.
 
@@ -36,10 +36,22 @@ pip install -r requirements.txt
 
 ## Usage
 
+- Запуск из VSCode: `Ctrl + F5`
 - Запуск скрипта в окне: `python leadparser.py`
 - Запуск скрипта в консоли: `python leadparser.py -c`
-- Запуск из VSCode: `Ctrl + F5`
-
+```
+    команды консоли:
+        -h, --help        This document.
+        -v, --version     Show version number.
+        -r, --reset       Clear the process with pcap_files in pcap_folder and start it from the beginning.
+        -f, --flush_log   Clear application log.
+        -t, --time_stamp  Add time stamp to result folder name.
+        -c, --console     Run in console mode only.
+        -d, --default     Back to default parameters.
+        -patch, --patch   Change patch version: x.x.X
+        -minor, --minor   Change minor version: x.X.x
+        -major, --major   Change major version: X.x.x
+```
 ## Configuration
 
 Настройки скрипта хранятся в файле leadparser.ini:
@@ -47,7 +59,7 @@ pip install -r requirements.txt
 ```
 [DEFAULT]
 name = leadparser
-version = EvoCom_Sovetsk_x.x.x
+project = EvoCom_Sovetsk
 capture_type = pcapng
 processes = 1
 threads = 3
@@ -119,10 +131,14 @@ leadparser-sca-evocom/
 │   │    ├── cupture.py         # функции парсинга и трекинга объектов полученных из телеграмм
 │   │    └── evocom_sovetsk.py  # описание структур телеграмм обьекта
 |   |
-│   └── ui/
-│        ├── __init__.py
-│        ├── console.py         # консольный режим
-│        └── tk.py              # gui обололчка
+│   ├── ui/
+│   |    ├── __init__.py
+│   |    ├── console.py         # консольный режим
+│   |    └── tk.py              # gui обололчка
+|   |
+|   └── version/
+|        ├── __init__.py
+│        └── version.py         # управление версиями
 |
 ├── logs/                       # папка для результатов парсинга телеграмм
 ├── pcapng/                     # файлы захвата wireshark в формате pcapng
@@ -140,54 +156,34 @@ leadparser-sca-evocom/
 ## Repositories structure
 При работе с репозиторием необходимо придержиавться следующей структуры и наименования веток:
 ```
-main                                            # основная рабочая ветка
+main                            # основная рабочая ветка (обновление только через pull request)
 |
-├── docs                                        # документация по проекту
+├── doc                         # документация по проекту
 |
-├── rel                                         # релизы версий 
+├── test                        # ветка для тестирования
 |   │
-│   ├── rel/vx.x.x                              # релиз версии x.x.x
-│   └── rel/vx.x.x                              # релиз версии x.x.x
+│   ├── test/user1/test-x
+│   └── test/user2/test-x
 |
-├── dev                                         # разработка
+├── dev                         # разработка новых функций
 |   |
-|   ├── dev/test/                               # тестирование перед мерджем с основной веткой
-|   |   |
-|   |   ├── dev/test/user1/test-x               # ползователь user 1
-|   |   └── dev/test/user2/test-x               # ползователь user 2
-|   |
-|   ├── dev/rel/test/                           # тестирование версий перед мерджем с релизом
-|   |   |
-|   |   ├── dev/rel/test/vx.x.x/user1/test-x    # ползователь user 1
-|   |   └── dev/rel/test/vx.x.x/user2/test-x    # ползователь user 2 
-|   |    
-|   └── dev/rel/                                # разработки версий 
-|        │
-|        ├── dev/rel/vx.x.x/user1/feat-x        # ползователь user 1 разработка
-|        └── dev/rel/vx.x.x/user2/feat-x        # ползователь user 2 разработка
+|   ├── dev/user1/feat-x
+|   └── dev/user2/feat-x
 |
-└── fix                                         # исправления
-    |
-    ├── fix/rel/test/                           # тестирование версий перед мерджем с релизом
-    |   |
-    |   ├── fix/rel/test/vx.x.x/user1/test-x    # ползователь user 1
-    |   └── fix/rel/test/vx.x.x/user2/test-x    # ползователь user 2
-    |    
-    └── fix/rel/                                # исправления 
-        │
-        ├── fix/rel/vx.x.x/user1/fix-x          # ползователь user 1 исправления
-        └── fix/rel/vx.x.x/user2/fix-x          # ползователь user 2 исправления
+└── fix                         # исправления ошибок
+    │
+    ├── fix/user1/fix-x
+    └── fix/user2/fix-x
 ```
+
 Придерживаемся следующих сокращений:
 ```
 dev/ (development): разработка
-user/ (user contibutor name): имя разработчика
-vx.x.x/ (version x.x.x): версия
-rel/ (release): релизы версий
+user/ (user contributor name): имя разработчика
 feat/ (feature): для новых функций
 fix/ (fix, hotfix, bugfix): для исправления ошибок
 test/ (testing): для тестирования 
-docs/ (documentation): для документации
+doc/ (documentation): для документации
 ```
 
 ## Acknowledgments

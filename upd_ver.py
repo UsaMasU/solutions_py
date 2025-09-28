@@ -78,11 +78,13 @@ def update_version(version_type):
 
 def upd_ver(version_type):
     filename = 'README.md'
-    new_version = "0.0.1"
+    version_point = "###### Version"
+    version_value = "0.0.1"
     try:
+        # если файла с номерои версии нет - создаем файл и записываем начальный номер
         if not os.path.exists(filename):
             f = open(filename, 'w', encoding='utf-8')
-            content = f"### Version {new_version}\n"
+            content = f"{version_point} {version_value}\n"
             f.write(content)
             f.close()
             print(f"✅ Создан файл: {filename}:\n{content}")
@@ -90,11 +92,16 @@ def upd_ver(version_type):
 
         with open(filename, 'r+', encoding='utf-8') as f:
             content = f.read()
+
             # Ищем версию
-            match = re.search(r'### Version\s+(\d+)\.(\d+)\.(\d+)', content)
+            match = re.search(rf'{version_point}\s+(\d+)\.(\d+)\.(\d+)', content)
+            
+            # версия не найдена - добавляем начальный номер
             if not match:
-                print("Ошибка: Не могу найти версию")
-                content = f"### Version {new_version}\n{content}"
+                print("Ошибка: Версия не найдена")
+                content = f"{version_point} {version_value}\n{content}"
+            
+            # версия найдена - изменяем номер
             else:
                 major, minor, patch = map(int, match.groups())
                 # Обновляем версию
@@ -111,12 +118,12 @@ def upd_ver(version_type):
                     print("Ошибка: Используй major, minor или patch")
                     return
                 
-                new_version = f'{major}.{minor}.{patch}'
+                version_value = f'{major}.{minor}.{patch}'
 
-                # Заменяем версию в README
+                # Заменяем версию в файле
                 content = re.sub(
-                    r'### Version\s*\d+\.\d+\.\d+',
-                    f'### Version {new_version}',
+                    rf'{version_point}\s*\d+\.\d+\.\d+',
+                    f'{version_point} {version_value}',
                     content
                 )
             
@@ -124,7 +131,7 @@ def upd_ver(version_type):
             f.write(content)
             f.truncate()
 
-            print(f"✅ Версия в файле {filename} обновлена до: {new_version}")
+            print(f"✅ Версия в файле {filename} обновлена до: {version_value}")
     
     except Exception as e:
         print(f"❌ Ошибка: {e}")

@@ -40,17 +40,17 @@ pip install -r requirements.txt
 - Запуск скрипта в окне: `python leadparser.py`
 - Запуск скрипта в консоли: `python leadparser.py -c`
 ```
-    команды консоли:
-        -h, --help        This document.
-        -v, --version     Show version number.
-        -r, --reset       Clear the process with pcap_files in pcap_folder and start it from the beginning.
-        -f, --flush_log   Clear application log.
-        -t, --time_stamp  Add time stamp to result folder name.
-        -c, --console     Run in console mode only.
-        -d, --default     Back to default parameters.
-        -patch, --patch   Change patch version: x.x.X
-        -minor, --minor   Change minor version: x.X.x
-        -major, --major   Change major version: X.x.x
+команды консоли:
+    -h, --help        This document.
+    -v, --version     Show version number.
+    -r, --reset       Clear the process with pcap_files in pcap_folder and start it from the beginning.
+    -f, --flush_log   Clear application log.
+    -t, --time_stamp  Add time stamp to result folder name.
+    -c, --console     Run in console mode only.
+    -d, --default     Back to default parameters.
+    -patch, --patch   Change patch version: x.x.X
+    -minor, --minor   Change minor version: x.X.x
+    -major, --major   Change major version: X.x.x
 ```
 ## Configuration
 
